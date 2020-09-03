@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Thermostat</title>
+
+  <script src="src/thermostat.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script>
+  
+  jQuery(document).ready(function() {
+  $("button").on("click", "#PowerSavingOff", function() {
+    $('body').css({"background-image": "url('https://www.nurtureworksyoga.co.uk/wp-content/uploads/2019/02/fire-horse-2492947_1920-copy.jpg)"});
+  });
+
+
+  $("button").on("click", "#PowerSavingOn", function() {
+  $('body').css({"background-image": "url('https://hungryhappenings.com/wp-content/uploads/2015/06/Polar-bear-ice-cream-cone1.jpg')"});
+});
+});
+    </script>
+
+</head>
+
+<body>
+
+    <h1 class='title'>Thermokinesis</h1>
+Current temperature: <h1 id="temperature"></h1>
+<button class="button" id="Reset">Reset</button>
+<button class="button"><span id="Up">Fire</span></button>
+<button class="button"><span id="Down"></id>Ice</button>
+ power saving mode is <span id="power-saving-status">on</span>
+<button class="button"><span id="PowerSavingOn">Ice mode</span></button>
+<button class="button"><span id="PowerSavingOff">Fire mode</span></button>
+</body>
+</html>
